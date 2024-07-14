@@ -1,0 +1,178 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.menu-hamburger {
+    display: none;
+    cursor: pointer;
+}
+
+#navbar {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+#navbar li {
+    margin: 0 15px;
+}
+
+#navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+.main-image img {
+    width: 100%;
+    height: auto;
+}
+
+.featured-models {
+    display: flex;
+    justify-content: space-around;
+    margin: 20px 0;
+}
+
+.model {
+    cursor: pointer;
+    text-align: center;
+}
+
+.model img {
+    width: 150px;
+    height: auto;
+}
+
+form {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form h2 {
+    margin-top: 0;
+}
+
+form input {
+    display: block;
+    margin: 10px 0;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+.product-gallery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.product-gallery img {
+    width: 300px;
+    height: auto;
+}
+
+.thumbnails {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.thumbnail {
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.product-details {
+    margin: 20px;
+}
+
+.product-details label,
+.product-details select,
+.product-details input {
+    display: block;
+    margin: 10px 0;
+}
+
+.cart-popup {
+    display: none;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 300px;
+    height: 100%;
+    background-color: white;
+    border-left: 1px solid #ccc;
+    z-index: 1001;
+    padding: 20px;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.5);
+}
+
+.cart-popup h2 {
+    margin-top: 0;
+}
+
+.cart-popup button {
+    display: block;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+@media (max-width: 800px) {
+    .menu-hamburger {
+        display: block;
+    }
+    
+    #navbar {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+        background-color: #333;
+    }
+    
+    #navbar li {
+        margin: 10px 0;
+    }
+    
+    .product-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .product-gallery img {
+        width: 100%;
+        height: auto;
+    }
+}

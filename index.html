@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DoDev Clothes - Home</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="menu-hamburger" id="menuHamburger">
+                ☰
+            </div>
+            <ul id="navbar">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">Sobre Nós</a></li>
+                <li><a href="#" id="cartButton">Carrinho</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="main-image">
+            <img src=".jpg" alt="Imagem Principal">
+        </div>
+        <div class="featured-models">
+            <div class="model" data-id="1">
+                <img src="/imagens/camisa2.jpg" alt="Modelo 1">
+                <p>Modelo 1</p>
+            </div>
+            <div class="model" data-id="2">
+                <img src="/imagens/camisa3.jpg" alt="Modelo 2">
+                <p>Modelo 2</p>
+            </div>
+            <div class="model" data-id="3">
+                <img src="modelo3.jpg" alt="Modelo 3">
+                <p>Modelo 3</p>
+            </div>
+        </div>
+        <form id="contactForm">
+            <h2>Entre em Contato</h2>
+            <input type="text" id="nome" name="nome" placeholder="Nome" required>
+            <input type="email" id="email" name="email" placeholder="Email" required>
+            <input type="tel" id="telefone" name="telefone" placeholder="Telefone" required>
+            <button type="submit">Enviar</button>
+        </form>
+    </main>
+    <div id="cartPopup" class="cart-popup">
+        <h2>Carrinho</h2>
+        <div id="cartItems"></div>
+        <div id="cartTotal"></div>
+        <button id="closeCart">Fechar</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
